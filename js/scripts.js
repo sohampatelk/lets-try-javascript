@@ -31,8 +31,7 @@ for (var i = 0; i < myArray.length; i++) {
 
 //A bsic function which starts with function keyword.
 function getValue() {
-  console.log("Enter the name:  ");
-  return prompt();
+  return prompt("Enter Your Name:");
 }
 
 function addSmile(inputValue) {
@@ -51,3 +50,64 @@ var inputValue = getValue();
 var addSmileRight = addSmile(inputValue);
 var addSmileLeft = addSmileLft(addSmileRight);
 finalValue(addSmileLeft);
+
+/*
+true === true
+1 == true
+0 == false
+undefined == false
+null == false
+NaN == false
+"" == false
+*/
+
+var a=3;
+var b=5;
+if(a===b){
+    console.log("a is identical to b");
+}else{
+    console.log("a and b are not identical.");
+}
+//Converting to turnary
+/**
+ * Sysntax is:
+ * (condition)?logic for true:logic for false;
+ * note that it returns the outcome, so, it can be used for assignment.
+ */
+(a===b)?console.log("a and b are identical"):console.log("a and b not identical");;
+
+
+// While Loop
+var i =0;
+while(i<6){
+    console.log("While Loop:"+i);
+    i++;
+}
+
+//Foreach It is a method for array datatype.
+myArray.forEach( function(arrayItem) { 
+    //Woah .we are in a closure, or anounomous function" now. We didn't declare and 
+    //name , so won't be able to call it again...
+    //It is useful here to process our array items though!!
+    console.log("Array Item is: "+arrayItem);
+});
+
+
+/*
+{   name: "Bob",
+    age: 32,
+    hobbies: ["sports","moveies","hike"]  }
+*/
+
+
+var myObject = { 
+    name: "Bob", 
+    age: 32, 
+    hobbies: [
+        "sports",
+        "moveies",
+        "hike"
+    ]    
+};
+
+console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is "+myObject.hobbies[1]+".");
