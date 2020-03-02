@@ -112,11 +112,14 @@ var myObject = {
         "34",
         "sleep",
         "repeat"
-    ]    
+    ],    
+    sayHi: function(){
+        console.log("hello my name is "+this.name+". I am "+this.age+" years old. and one of my hobby is \r\n"+this.hobbies[1]+".");
+    }
 };
 
 
-console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is \r\n"+myObject.hobbies[1]+"."+myObject.hobby[0]);
+myObject.sayHi();
 
 myObject.age++;
 myObject.hobbies[4]="programming";
