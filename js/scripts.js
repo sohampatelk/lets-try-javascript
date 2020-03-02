@@ -115,10 +115,16 @@ var myObject = {
     ],    
     sayHi: function(){
         console.log("hello my name is "+this.name+". I am "+this.age+" years old. and one of my hobby is \r\n"+this.hobbies[1]+".");
+    },
+    birthday: function(){
+        this.age++;
+        return this.age;
     }
 };
 
+myObject.birthday(); //increment age property.
 
+//let Bob speak
 myObject.sayHi();
 
 myObject.age++;
@@ -126,6 +132,16 @@ myObject.hobbies[4]="programming";
 
 console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is \r\n"+myObject.hobbies[4]+"."+myObject.hobby[1]);
 
+/*
+ * myObject.age
+ * is equivalent to...
+ * myObject["age"]
+ */
+console.log("Looping through myObject");
+ //We can loop through properties in an object.
+for(var prop in myObject){
+    console.log(myObject[prop]);
+}
 
 var multiLineString=`
     This text
@@ -133,3 +149,9 @@ var multiLineString=`
 manylines!!!
 `;
 console.log(multiLineString);
+
+
+function myFunction(){
+    var testerNum = 36;//this is local variable. you can't use outside of function.
+    console.log("My function has run.");
+}
