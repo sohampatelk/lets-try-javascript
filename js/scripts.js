@@ -107,7 +107,26 @@ var myObject = {
         "sports",
         "moveies",
         "hike"
+    ],
+    hobby: [
+        "34",
+        "sleep",
+        "repeat"
     ]    
 };
 
-console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is "+myObject.hobbies[1]+".");
+
+console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is \r\n"+myObject.hobbies[1]+"."+myObject.hobby[0]);
+
+myObject.age++;
+myObject.hobbies[4]="programming";
+
+console.log("hello my name is "+myObject.name+". I am "+myObject.age+" years old. and one of my hobby is \r\n"+myObject.hobbies[4]+"."+myObject.hobby[1]);
+
+
+var multiLineString=`
+    This text
+        is 
+manylines!!!
+`;
+console.log(multiLineString);
