@@ -116,6 +116,7 @@ targetLink.textContent = "Go Back Home";
     Forms
 */
 var calculateForm = document.getElementById("calculator");
+
 calculateForm.addEventListener("submit",function(event){
 
     //STOP the submission(event)
@@ -131,6 +132,21 @@ calculateForm.addEventListener("submit",function(event){
     var num1Value=num1Input.value;
     var num2Value=num2Input.value;
 
+    var result = 0;
+    switch (operatorValue) {
+        case "add":
+          result = num1Value + num2Value;
+          break;
+        case "substract":
+            result = num1Value - num2Value;
+            break;
+        case "devide":
+            result = num1Value / num2Value;
+            break;
+        case "multiply":
+            result = num1Value * num2Value;
+            break;
+    }     
 });
 
 
