@@ -17,3 +17,40 @@ for (var i = 1; i <= 100; i++) {
         console.log(i);         //other numbers are printed here.
     }
 }
+
+
+/**
+ * New Exercise:
+===
+Build a JS object of your own to represent a hotel.
+Properties of the hotel object should include the name of the hotel (The Quay), 
+the total number of rooms (40), the current number of rooms booked (25), 
+an array of the types of rooms (twin, double, suite), 
+and function to check the availability.
+One you've created your object, create a loop to log to 
+the console all of the room types one-by-one. Then, update the booked rooms to 30, 
+check the new availability, and output that using console.log
+ */
+
+var myHotel = {
+    nameOfHotel : "The Quay",
+    numOfRooms : 40,
+    currentRoomsBooked : 25,
+    typeOfRooms :[
+        "twin",
+        "double",
+        "suite"
+    ],
+    checkTheAvailability : function(){
+        return (this.numOfRooms-this.currentRoomsBooked);
+    }
+}
+
+//Loop to log to the console all of the room types one-by-one
+for(var i in myHotel){
+    console.log(myHotel[i]);
+}
+
+myHotel.currentRoomsBooked += 5;//Incease the value to 30.
+
+console.log(myHotel.checkTheAvailability());
