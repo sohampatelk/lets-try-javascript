@@ -13,12 +13,37 @@
 
   <body>
     <h1>Let's Learm JAvascript!!</h1>
-    <aside>
-      <h2>Note:</h2>
-      <p id="my-paragraph">
-        Press f12,Lorem, This is my paragraph. This is Soham here.Press f12,Lorem, This is my paragraph. This is Soham here.
-        Lorem ipsum dolor sit amet.
-      </p>
-    </aside>
+    
+    <form id="calculator" action="#" method="GET">
+        <label for="operator">
+            Select an Operator : 
+            <select name="operator" id="operator">
+                <option value="add">Add</option>
+                <option value="substract">Substract</option>
+                <option value="divide">Divide</option>
+                <option value="multiply">Multiply</option>
+            </select>
+        </label>
+        <label for="num1">
+            Enter thenumber:
+            <input name="num1" id="num1" type="number" >
+        </label>
+        <label for="num2">
+            Enter thenumber:
+            <input name="num2" id="num2" type="number" >
+        </label>
+        <button type="submit" id="run-calc">
+            Run Calculation
+        </button>
+        <strong>Answer:</strong><em id="result"></em>
+    </form>
+
+
+    <h2>Note:</h2>
+    <p id="my-paragraph">
+    Press f12,Lorem, This is my paragraph. This is Soham here.Press f12,Lorem, This is my paragraph. This is Soham here.
+    Lorem ipsum dolor sit amet.
+    </p>
+
   </body>
 </html>

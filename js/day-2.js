@@ -110,3 +110,30 @@ document.body.appendChild(otherNewPara);
 // Lts try query selector
 var targetLink = document.querySelector(".my-link");
 targetLink.textContent = "Go Back Home";
+
+
+/* 
+    Forms
+*/
+var calculateForm = document.getElementById("calculator");
+calculateForm.addEventListener("submit",function(event){
+
+    //STOP the submission(event)
+    event.preventDefault();
+
+    //collect the form fields
+    var operatorInput = document.getElementById("operator");
+    var num1Input = document.getElementById("num1");
+    var num2Input = document.getElementById("num2");
+
+    // retrive the values from the form fields
+    var operatorValue = operatorInput.value;
+    var num1Value=num1Input.value;
+    var num2Value=num2Input.value;
+
+});
+
+
+/* var operatorInput = document.getElementById("operator");
+var num1Input = document.getElementById("num1");
+var num2Input = document.getElementById("num2"); */
