@@ -73,3 +73,35 @@ switch (mathOperation) {
     console.log("no operation provided.");
     break;
 }
+
+
+/* Let's manupulate html tages with javascript */
+var myPara = document.getElementById("my-paragraph");
+console.log(myPara);
+
+myPara.textContent = "Hello World";
+myPara.textContent += "also, h/ey How are ya \"?";
+
+//create a brand new element. it will not show up yet, we can start manupulating it. before we inject into our webpage.
+var newPara = document.createElement("p");
+
+newPara.textContent = "This is Soham here. I am in new element and created paragraph";
+//add your element onto body.
+document.body.appendChild(newPara);
+
+
+var otherNewPara = document.createElement("p");
+otherNewPara.textContent = "This is other new paragraph.d paragraphThis is other new paragraph.d paragraphThis is other new paragraph.d paragraphThis is other new paragraph.d paragraph";
+
+//add your element onto body.
+otherNewPara.style.color="darkgray";
+var myFirstLink = document.createElement("A");
+myFirstLink.textContent = "Click Here";
+myFirstLink.href = "./index.html";
+myFirstLink.title = "Return to the Homepage";
+myFirstLink.style.color = "red";
+//We are ading the link into our brand new paragraph before it even goes to browser.
+otherNewPara.appendChild(myFirstLink);
+
+//Now our paragraph with text and a link both, will be added to body.
+document.body.appendChild(otherNewPara);
