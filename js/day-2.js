@@ -99,9 +99,14 @@ var myFirstLink = document.createElement("A");
 myFirstLink.textContent = "Click Here";
 myFirstLink.href = "./index.html";
 myFirstLink.title = "Return to the Homepage";
-myFirstLink.style.color = "red";
+myFirstLink.className = "my-link";
+//myFirstLink.style.color = "blue";
 //We are ading the link into our brand new paragraph before it even goes to browser.
 otherNewPara.appendChild(myFirstLink);
 
 //Now our paragraph with text and a link both, will be added to body.
 document.body.appendChild(otherNewPara);
+
+// Lts try query selector
+var targetLink = document.querySelector(".my-link");
+targetLink.textContent = "Go Back Home";
