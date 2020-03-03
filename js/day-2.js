@@ -135,8 +135,8 @@ calculateForm.addEventListener("submit",function(event){
     var result = 0;
     switch (operatorValue) {
         case "add":
-          result = num1Value + num2Value;
-          break;
+            result = Number(num1Value) + Number(num2Value);
+            break;
         case "substract":
             result = num1Value - num2Value;
             break;
@@ -146,8 +146,11 @@ calculateForm.addEventListener("submit",function(event){
         case "multiply":
             result = num1Value * num2Value;
             break;
-    }     
-});
+    }     //end of switch
+
+    var resultElement = document.getElementById("result");
+    resultElement.textContent = result;
+}); //end of event listener
 
 
 /* var operatorInput = document.getElementById("operator");
