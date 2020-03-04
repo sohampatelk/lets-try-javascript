@@ -8,7 +8,7 @@
 <!-- Stylesheets -->
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <!-- Scripts-javascript -->
-<script type="text/javascript" src="js/table.js" defer></script>
+<script type="text/javascript" src="js/table1.js" defer></script>
 </head>
 <body>
 <h1>Table Example</h1>
@@ -36,7 +36,7 @@
 </form>
 
 
-<table id="myTable">
+<table class="myTable">
     <thead>
         <tr>
             <th>Name</th>
@@ -45,12 +45,17 @@
             <th>City</th>
         </tr>
     </thead>
-    <tbody id="myTableBody">     
-    
+    <tbody >
+        <tr>
+            <td class="myTableData1"></td>
+            <td class="myTableData2"></td>
+            <td class="myTableData3"></td>
+            <td class="myTableData4"></td>
+        </tr>
     </tbody>
 </table>
-<button type="submit" id="delete-row">
+<!-- <button type="submit" id="delete-row">
     Delete From Table
-</button>
+</button> -->
 </body>
 </html>

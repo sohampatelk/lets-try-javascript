@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table-Exercise</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Scripts-javascript -->
+    <script type="text/javascript" src="js/table-exercise.js" defer></script>
+</head>
+
+<body>
+<h1>Table Example</h1>
+
+<form id="table-form" action="#" method="GET">
+    <h2>Add info to table:</h2>
+    <label for="name">
+        Enter Name:
+        <input name="name" id="name" type="text" placeholder="name">
+    </label>
+    <label for="age">
+        Enter the age:
+        <input name="age" id="age" type="number" placeholder="age">
+    </label>
+    <label for="school-class">
+        Enter the class:
+        <input name="school-class" id="school-class" type="text" placeholder="class">
+    </label>
+    <label for="city">
+        Enter the City:
+        <input name="city" id="city" type="text" placeholder="city">
+    </label>
+    <button type="submit" id="run-submit">
+        Add in Table
+    </button>
+</form>
+
+
+<table id="myTable">
+    <!-- open table -->
+    <thead>
+        <!-- Open table head -->
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+            <th>City</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table-body">
+        <tr>
+            <td>Bob</td>
+            <td>30</td>
+            <td>Swiming</td>
+            <td>Edmonton</td>
+            <td><button>Delete Row</button></td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+
+</html>

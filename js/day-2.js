@@ -95,6 +95,8 @@ otherNewPara.textContent = "This is other new paragraph.d paragraphThis is other
 
 //add your element onto body.
 otherNewPara.style.color="darkgray";
+
+//Create a new link element
 var myFirstLink = document.createElement("A");
 myFirstLink.textContent = "Click Here";
 myFirstLink.href = "./index.html";
@@ -107,9 +109,9 @@ otherNewPara.appendChild(myFirstLink);
 //Now our paragraph with text and a link both, will be added to body.
 document.body.appendChild(otherNewPara);
 
-// Lts try query selector
+// Lts try query selector to change textcontanct in .mylink class
 var targetLink = document.querySelector(".my-link");
-targetLink.textContent = "Go Back Home";
+targetLink.textContent = "Go Back Home"; 
 
 
 /* 

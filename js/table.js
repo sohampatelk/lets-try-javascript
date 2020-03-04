@@ -22,11 +22,16 @@ calculateForm.addEventListener("submit",function(event){
     var schoolClassValue = schoolClassInput.value;
     var cityValue = cityInput.value;
 
-
+    //Take table body element into variable
     var tableBody = document.getElementById("myTableBody");
     //table.insertRow(i);
     // Creating a row
     var row = tableBody.insertRow(i);
+    
+    /* row.class = "deleteMeLater"+i;
+    delete(a)
+    del = getelemtnbyid(deletemeLater+a);
+ */
     //Creating a cell
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -41,4 +46,13 @@ calculateForm.addEventListener("submit",function(event){
     i++;
     //reset the form
     document.getElementById("calculator").reset();
+});
+
+
+var deleteRow = document.getElementById("delete-row");
+deleteRow.addEventListener("submit",function(event){
+    i=i-1;
+    document.getElementById("myTable").deleteRow(i);
+    
+    //i--;
 });
