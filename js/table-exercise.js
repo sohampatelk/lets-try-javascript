@@ -22,7 +22,7 @@ for(var i=0; i<allButtons.length ; i++){
     });
 }
 
-
+// myform event lisner
 myForm.addEventListener("submit",function(event){
     //prevent the form from actually submitting (would leave or refresh the page.)
     event.preventDefault();
